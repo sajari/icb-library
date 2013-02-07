@@ -1,0 +1,20 @@
+ICB\Impl\Entity\DoctrineORM\Industry:
+    type: entity
+    table: icb_industry
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        code:
+            type: string
+            length: 4
+            nullable: false
+            column: icb_code
+            unique: true
+        title:
+            type: string
+            length: 150
+            nullable: false
+            column: title

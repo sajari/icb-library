@@ -1,0 +1,21 @@
+{
+    "name": "jojari/icb-library",
+    "type": "library",
+    "description": "Library source code for the ICB taxonomy",
+    "keywords": ["ICB", "taxonomy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Holmes"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "ICB": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
