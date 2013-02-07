@@ -13,7 +13,7 @@ interface IndustryRepositoryInterface
      *
      * @return IndustryInterface|null
      */
-    public function findIndustry($id);
+    public function find($id);
 
     /**
      * Find the industry with the given code.
@@ -22,12 +22,12 @@ interface IndustryRepositoryInterface
      *
      * @return IndustryInterface|null
      */
-    public function findIndustryByCode($code);
+    public function findByCode($code);
 
     /**
      * Return a collection of industries.
      *
      * @return IndustryInterface[]
      */
-    public function findIndustries();
+    public function findAll();
 }

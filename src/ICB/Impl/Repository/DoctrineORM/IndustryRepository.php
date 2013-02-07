@@ -32,7 +32,7 @@ class IndustryRepository implements IndustryRepositoryInterface
     /**
      * {@inheritdoc}
      */
-    public function findIndustry($id)
+    public function find($id)
     {
         $query = $this->getRepository()
             ->createQueryBuilder('i')
@@ -48,7 +48,7 @@ class IndustryRepository implements IndustryRepositoryInterface
     /**
      * {@inheritdoc}
      */
-    public function findIndustryByCode($code)
+    public function findByCode($code)
     {
         $query = $this->getRepository()
             ->createQueryBuilder('i')
@@ -64,7 +64,7 @@ class IndustryRepository implements IndustryRepositoryInterface
     /**
      * {@inheritdoc}
      */
-    public function findIndustries()
+    public function findAll()
     {
         $query = $this->getRepository()
             ->createQueryBuilder('i')
